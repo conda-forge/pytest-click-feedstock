@@ -1,18 +1,18 @@
 {% set name = "pytest-click" %}
-{% set version = "1.1.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytest_click-{{ version }}.tar.gz
-  sha256: fdd9f6721f877dda021e7c5dc73e70aecd37e5ed23ec6820f8a7b3fd7b4f8d30
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pytest_click-{{ version }}.tar.gz
+  sha256: 12e314617a3d88b416d48d5afb869da75992dc08bed948d6214fff921b26daf6
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
